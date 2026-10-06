@@ -1,0 +1,228 @@
+{
+ "format": "portable-motion",
+ "version": "1.0",
+ "name": "animation",
+ "timing": {
+  "frameRate": 30,
+  "durationFrames": 200,
+  "frameIndexBase": 0,
+  "loop": null,
+  "loopNote": "loop/repeat behaviour is not defined in the XML; not invented"
+ },
+ "valueSemantics": {
+  "units": {
+   "x": "pixels",
+   "y": "pixels",
+   "scaleX": "multiplier",
+   "scaleY": "multiplier",
+   "rotation": "degrees",
+   "skewX": "degrees",
+   "skewY": "degrees"
+  },
+  "reference": "keyframe values are offsets from the part's own rest/setup transform on the target character; the original absolute stage position is deliberately NOT included",
+  "omittedProperties": "a property absent from a keyframe's values keeps the value from the previous keyframe; before any value is given it is the rest value (x=0,y=0,rotation=0,skew=0,scale=1)",
+  "tweenOwnership": "a keyframe's tween describes the interpolation from that keyframe to the next keyframe; tween.status 'none' = hold/no tween defined",
+  "easingTarget": "CustomEase target 'all' = applies to every animated property",
+  "numberPrecision": "floating-point noise rounded to 6 decimals"
+ },
+ "easings": {
+  "custom_ease_1": {"type":"customEase","controlPoints":[{"x":0.333333,"y":0.0},{"x":0.666667,"y":0.333333}]},
+  "custom_ease_2": {"type":"customEase","controlPoints":[{"x":0.333333,"y":0.666667},{"x":0.666667,"y":1.0}]},
+  "custom_ease_3": {"type":"customEase","controlPoints":[{"x":0.333333,"y":0.358974},{"x":0.666667,"y":0.692308}]}
+ },
+ "parts": {
+  "head": {
+   "aliases": [],
+   "pivot": {"x":0.875338,"y":0.8,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":7,"zDepth":0,"values":{"y":24.9,"rotation":-10.0},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":7}},
+    {"frame":14,"zDepth":0,"values":{"x":-62.2,"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":14}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"graphicFirstFrame":50}},
+    {"frame":57,"zDepth":0,"values":{"x":0.0,"y":24.9,"rotation":-10.0},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":57}},
+    {"frame":64,"zDepth":0,"values":{"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":64}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true,"graphicFirstFrame":100}},
+    {"frame":107,"zDepth":0,"values":{"y":24.9,"rotation":-10.0},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":107}},
+    {"frame":114,"zDepth":0,"values":{"x":-62.2,"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":114}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true,"graphicFirstFrame":150}},
+    {"frame":157,"zDepth":0,"values":{"x":0.0,"y":24.9,"rotation":-10.0},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":157}},
+    {"frame":164,"zDepth":0,"values":{"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":164}}
+   ]
+  },
+  "body": {
+   "aliases": ["stomach", "belly", "torso"],
+   "pivot": {"x":0.499945,"y":0.5054,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":7,"zDepth":0,"values":{"y":22.15,"scaleY":0.938},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":14,"zDepth":0,"values":{"x":-37.2,"y":0.0,"scaleY":1.005,"skewX":-6.0},"tween":{"status":"none","easing":null}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"}},
+    {"frame":57,"zDepth":0,"values":{"x":0.0,"y":22.15,"scaleY":0.938,"rotation":0.0},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":64,"zDepth":0,"values":{"y":0.0,"scaleY":1.0},"tween":{"status":"none","easing":null}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":107,"zDepth":0,"values":{"y":22.15,"scaleY":0.938},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":114,"zDepth":0,"values":{"x":-37.2,"y":0.0,"scaleY":1.005,"skewX":-6.0},"tween":{"status":"none","easing":null}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true}},
+    {"frame":157,"zDepth":0,"values":{"x":0.0,"y":22.15,"scaleY":0.938,"rotation":0.0},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":164,"zDepth":0,"values":{"y":0.0,"scaleY":1.0},"tween":{"status":"none","easing":null}}
+   ]
+  },
+  "left_wing": {
+   "aliases": ["left_fin", "left_arm"],
+   "pivot": {"x":0.169927,"y":0.014802,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":7,"zDepth":0,"values":{"x":0.15,"y":23.4,"rotation":-10.2},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":14,"zDepth":0,"values":{"x":-31.1,"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"loop":"single frame"}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"loop":"single frame"}},
+    {"frame":57,"zDepth":0,"values":{"x":0.15,"y":23.4,"rotation":-10.2},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":64,"zDepth":0,"values":{"x":0.0,"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"loop":"single frame"}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":107,"zDepth":0,"values":{"x":0.15,"y":23.4,"rotation":-10.2},"tween":{"status":"customEase","easing":"custom_ease_3"},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":108,"zDepth":0,"values":{"x":-8.1,"y":17.2,"skewX":-21.5,"skewY":158.5},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":114,"zDepth":0,"values":{"x":-31.2,"y":0.0,"skewX":20.7,"skewY":-159.3},"tween":{"status":"none","easing":null},"meta":{"loop":"single frame"}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":157,"zDepth":0,"values":{"x":9.2,"y":-1.1,"skewX":35.7,"skewY":-144.3},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":163,"zDepth":0,"values":{"x":0.05,"y":0.0,"skewX":-30.0,"skewY":150.0},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":164,"zDepth":0,"values":{"x":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"loop":"single frame"}}
+   ]
+  },
+  "right_wing": {
+   "aliases": ["right_fin", "right_arm"],
+   "pivot": {"x":0.210787,"y":0.04247,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true,"loop":"single frame"}},
+    {"frame":7,"zDepth":0,"values":{"y":23.4,"rotation":-7.7},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":14,"zDepth":0,"values":{"x":-31.25,"y":0.15,"rotation":85.8},"tween":{"status":"none","easing":null},"meta":{"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true,"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":57,"zDepth":0,"values":{"x":0.0,"y":23.45,"rotation":127.3},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":64,"zDepth":0,"values":{"x":19.95,"y":0.1,"rotation":85.8},"tween":{"status":"none","easing":null},"meta":{"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":107,"zDepth":0,"values":{"x":0.0,"y":23.45,"rotation":127.3},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true,"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":114,"zDepth":0,"values":{"x":-31.25,"y":0.15,"rotation":85.8},"tween":{"status":"none","easing":null},"meta":{"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true,"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":157,"zDepth":0,"values":{"x":0.0,"y":23.45,"rotation":127.3},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"loop":"single frame","graphicFirstFrame":1}},
+    {"frame":164,"zDepth":0,"values":{"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"loop":"single frame"}}
+   ]
+  },
+  "left_leg": {
+   "aliases": [],
+   "pivot": {"x":0.5,"y":0.499838,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":7,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":14,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"}},
+    {"frame":57,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":64,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":107,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":114,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true}},
+    {"frame":157,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":164,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}}
+   ]
+  },
+  "right_leg": {
+   "aliases": [],
+   "pivot": {"x":0.499739,"y":0.5,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":7,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":14,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"}},
+    {"frame":57,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":64,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":107,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":114,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true}},
+    {"frame":157,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":164,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}}
+   ]
+  },
+  "left_foot": {
+   "aliases": ["left_claw", "left_paw"],
+   "pivot": {"x":0.5,"y":0.500611,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":7,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":14,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"}},
+    {"frame":57,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":64,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":107,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":114,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true}},
+    {"frame":157,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":164,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}}
+   ]
+  },
+  "right_foot": {
+   "aliases": ["right_claw", "right_paw"],
+   "pivot": {"x":0.5,"y":0.501452,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":7,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":14,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"}},
+    {"frame":57,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":64,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":107,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":114,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true}},
+    {"frame":157,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true}},
+    {"frame":164,"zDepth":0,"values":{},"tween":{"status":"none","easing":null}}
+   ]
+  },
+  "tail": {
+   "aliases": [],
+   "pivot": {"x":0.105825,"y":0.208679,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":7,"zDepth":0,"values":{"y":0.05,"rotation":-20.5},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":7}},
+    {"frame":14,"zDepth":0,"values":{"x":-46.65,"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":14}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"}},
+    {"frame":57,"zDepth":0,"values":{"x":0.0,"y":0.05,"rotation":-20.5},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":7}},
+    {"frame":64,"zDepth":0,"values":{"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":14}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":107,"zDepth":0,"values":{"y":0.05,"rotation":-20.5},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":7}},
+    {"frame":114,"zDepth":0,"values":{"x":-46.65,"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":14}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true}},
+    {"frame":157,"zDepth":0,"values":{"x":0.0,"y":0.05,"rotation":-20.5},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":7}},
+    {"frame":164,"zDepth":0,"values":{"y":0.0,"rotation":0.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":14}}
+   ]
+  },
+  "shadow": {
+   "aliases": [],
+   "pivot": {"x":0.481767,"y":0.5,"space":"normalized to the original part's bounding box (informational; map to target part's pivot)"},
+   "keyframes": [
+    {"frame":0,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":7,"zDepth":0,"values":{"x":0.1,"scaleX":0.938},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":7}},
+    {"frame":14,"zDepth":0,"values":{"x":-36.65,"scaleX":1.029},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":14}},
+    {"frame":50,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"}},
+    {"frame":57,"zDepth":0,"values":{"x":0.1,"scaleX":0.938},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":7}},
+    {"frame":64,"zDepth":0,"values":{"x":0.0,"scaleX":1.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":14}},
+    {"frame":100,"zDepth":0,"values":{},"tween":{"status":"customEase","easing":"custom_ease_1"},"meta":{"tweenSnap":true}},
+    {"frame":107,"zDepth":0,"values":{"x":0.1,"scaleX":0.938},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":7}},
+    {"frame":114,"zDepth":0,"values":{"x":-36.65,"scaleX":1.029},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":14}},
+    {"frame":150,"zDepth":0,"values":{},"tween":{"status":"unspecified","easing":null},"meta":{"tweenSnap":true}},
+    {"frame":157,"zDepth":0,"values":{"x":0.1,"scaleX":0.938},"tween":{"status":"customEase","easing":"custom_ease_2"},"meta":{"tweenSnap":true,"graphicFirstFrame":7}},
+    {"frame":164,"zDepth":0,"values":{"x":0.0,"scaleX":1.0},"tween":{"status":"none","easing":null},"meta":{"graphicFirstFrame":14}}
+   ]
+  }
+ },
+ "notes": [
+  "Part ids were assigned from the source symbol names (head, stomach->body, fin->wing, panja->foot/claw, tail, shadow); the original symbol/library names are intentionally excluded. Use 'aliases' if the target rig uses other names.",
+  "left_leg, right_leg, left_foot and right_foot contain keyframes and easing but NO transform values in the source XML; they have no motion of their own. They are kept so timing stays complete.",
+  "tween.status 'unspecified' means the XML had an empty <tweens> element, so the easing for that segment is unknown and was not invented. This occurs at frame 150 on every part, frames 157 and 163 on left_wing, and frames 50, 100, 107 and 150 on right_wing.",
+  "left_wing frames 108-163 use skewX/skewY instead of rotation. In Animate, rotation equals skewX=skewY=rotation, so the explicit rotation=0 at frame 164 should reset skew to 0. Preserved as authored.",
+  "meta.graphicFirstFrame and meta.loop refer to the ORIGINAL graphic symbol's internal timeline; ignore unless the target part has an equivalent timeline.",
+  "Original bounding-box dimensions and absolute source positions were excluded because they describe the original artwork/layout.",
+  "Offsets are in the original document's pixels; scale x/y offsets if the target character is a different size.",
+  "Rotation/skew pivots depend on each part's transformation point; the target part's pivot should match the 'pivot' of the corresponding part for identical results."
+ ],
+ "easings_note": "cubic-bezier control points P1,P2 with P0=(0,0), P3=(1,1); x=time, y=progress; applies to all properties (CustomEase target 'all')"
+}
